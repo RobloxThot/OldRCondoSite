@@ -3,6 +3,7 @@
 //you need to put a roblox cookie here blame roblox
 $cookie = "_|WARNING:-DO-NOT-SHARE-THIS...";
 $websiteName = "Condos";
+$backgroundImage = "https://www.teahub.io/photos/full/11-111196_gif-wallpaper.gif";
 $discordInvite = "https://discord.gg/";
 $gameIds = array(// List of gamesIDs
     6674398905,
@@ -96,7 +97,7 @@ try {
 	    	}
 
 	    	body {
-    			background: url("https://www.teahub.io/photos/full/11-111196_gif-wallpaper.gif") no-repeat center center fixed; 
+    			background: url("<?php echo($backgroundImage); ?>") no-repeat center center fixed; 
 				background-repeat: no-repeat;
 				backdrop-filter: blur(10px);
 				background-position: bottom;
