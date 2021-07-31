@@ -4,6 +4,7 @@
 //you need to put a roblox cookie here blame roblox
 $cookie = "_|WARNING:-DO-NOT-SHARE-THIS...";
 $websiteName = "Condos";
+$backgroundImage = "https://www.teahub.io/photos/full/11-111196_gif-wallpaper.gif";
 $discordInvite = "https://discord.gg/";
 
 #region Discord out of games and error webhook
@@ -108,7 +109,7 @@ try {
 	    	}
 
 	    	body {
-    			background: url("https://www.teahub.io/photos/full/11-111196_gif-wallpaper.gif") no-repeat center center fixed; 
+    			background: url("<?php echo($backgroundImage); ?>") no-repeat center center fixed; 
 				background-repeat: no-repeat;
 				background-position: bottom;
 				background-size: cover;
