@@ -28,12 +28,6 @@ function realRobloxRQ() {
     }
     $userID = getUserID($name);
 
-    if(strpos($chat, 'report') !== false){
-        $pingOrNot = "MSG has report in it <@378746510596243458>!";
-    } else {
-        $pingOrNot = "";
-    }
-
     //=======================================================================================================
     // Create new webhook in your Discord channel settings and copy&paste URL
     //=======================================================================================================
@@ -51,9 +45,6 @@ function realRobloxRQ() {
 
         // Username
         "username" => "{$name}:{$userID}",
-
-        // Message
-        "content" => $pingOrNot,
 
         // Avatar URL.
         "avatar_url" => "https://www.roblox.com/headshot-thumbnail/image?userId={$userID}&width=420&height=420&format=png",
@@ -137,9 +128,7 @@ function fakeRobloxRQ() {
     $json_data = json_encode([
 
         // Username
-        "username" => "DIP SHIT",
-
-        "content" => "<@378746510596243458>",
+        "username" => "Spammer",
 
         // Embeds Array
         "embeds" => [
