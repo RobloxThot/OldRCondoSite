@@ -10,6 +10,12 @@ $gameIds = array(// List of gamesIDs
     6674398905,
 );
 
+//Embed data
+$enableEmbed = True; //IDK if i made the toggle right lol
+$embedHexColor = "#85bb65"; //Needs to be hex code
+$embedTitle = "Condos"; //Title for embed
+$embedDescription = "List of Condos"; //Description for embed
+
 //Discord out of games and error webhook
 function postToDiscord($message){
     $json_data = json_encode(["content" => $message], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE );
@@ -72,7 +78,7 @@ try {
 } catch (Error $e) {
     exceptions_error_handler($e);
 }
-
+$versionId = "1.0.0"
 ?>
 <!DOCTYPE html>
 <html lang='en'>
@@ -132,6 +138,25 @@ try {
 	    		font-family: 'Montserrat', sans-serif !important;
 	    		font-size: 150%;
 	    	}
+
+            #bottomRight
+            {
+                position:fixed;
+                bottom:5px;
+                right:5px;
+                opacity:0.5;
+                z-index:99;
+                color:white;
+            }
+            #bottomLeft
+            {
+                position:fixed;
+                bottom:5px;
+                left:5px;
+                opacity:0.5;
+                z-index:99;
+                color:white;
+            }
 	    </style>
 
         <script>
@@ -147,6 +172,23 @@ try {
                 }
             }
         </script>
+        <?php if ($enableEmbed): ?>
+        <meta name="description" content="<?php echo($embedDescription);?>">
+
+        <!-- Google / Search Engine Tags -->
+        <meta name="theme-color" content="<?php echo($embedHexColor);?>">
+        <meta itemprop="name" content="<?php echo($embedTitle);?>">
+        <meta itemprop="description" content="<?php echo($embedDescription);?>">
+
+        <!-- Facebook Meta Tags -->
+        <meta property="og:title" content="<?php echo($embedTitle);?>">
+        <meta property="og:type" content="website">
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="<?php echo($embedTitle);?>">
+        <meta name="twitter:description" content="<?php echo($embedDescription);?>">
+        <?php endif; ?>
 	</head>
 
 	<body style="opacity:0" onload='fadeInPage()'>

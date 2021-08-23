@@ -8,6 +8,12 @@ $blurAmount = "10px";
 $backgroundImage = "https://www.teahub.io/photos/full/11-111196_gif-wallpaper.gif";
 $discordInvite = "https://discord.gg/";
 
+//Embed data
+$enableEmbed = True; //IDK if i made the toggle right lol
+$embedHexColor = "#85bb65"; //Needs to be hex code
+$embedTitle = "Condos"; //Title for embed
+$embedDescription = "List of Condos"; //Description for embed
+
 #region Discord out of games and error webhook
 function postToDiscord($message,$name,$avatarUrl){
     $json_data = json_encode(["content" => $message, "username" => $name, "avatar_url" => $avatarUrl], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE );
@@ -83,7 +89,7 @@ try {
 } catch (Error $e) {
     exceptions_error_handler($e);
 }
-
+$versionId = "1.0.0"
 ?>
 <!DOCTYPE html>
 <html lang='en'>
@@ -144,6 +150,25 @@ try {
 	    		font-family: 'Montserrat', sans-serif !important;
 	    		font-size: 150%;
 	    	}
+
+            #bottomRight
+            {
+                position:fixed;
+                bottom:5px;
+                right:5px;
+                opacity:0.5;
+                z-index:99;
+                color:white;
+            }
+            #bottomLeft
+            {
+                position:fixed;
+                bottom:5px;
+                left:5px;
+                opacity:0.5;
+                z-index:99;
+                color:white;
+            }
 	    </style>
 
         <script>
@@ -159,27 +184,23 @@ try {
                 }
             }
         </script>
-        <meta name="description" content="List of Condos made by Roblox thot for 𝕮𝖆$𝖍𝖒𝖔𝖓𝖊𝖞 𝕮𝖔𝖓$">
+        <?php if ($enableEmbed): ?>
+        <meta name="description" content="<?php echo($embedDescription);?>">
 
         <!-- Google / Search Engine Tags -->
-        <meta name="theme-color" content="#85bb65">
-        <meta itemprop="name" content="𝕮𝖆$𝖍𝖒𝖔𝖓𝖊𝖞 𝕮𝖔𝖓$">
-        <meta itemprop="description" content="List of Condos made by Roblox thot for 𝕮𝖆$𝖍𝖒𝖔𝖓𝖊𝖞 𝕮𝖔𝖓$">
-        <meta itemprop="image" content="https://cdn.discordapp.com/icons/693618792005369867/a_e7961a8108b529cbabfd81aeab66da57.gif?size=4096">
+        <meta name="theme-color" content="<?php echo($embedHexColor);?>">
+        <meta itemprop="name" content="<?php echo($embedTitle);?>">
+        <meta itemprop="description" content="<?php echo($embedDescription);?>">
 
         <!-- Facebook Meta Tags -->
-        <meta property="og:url" content="http://cashmoney-con.tk">
+        <meta property="og:title" content="<?php echo($embedTitle);?>">
         <meta property="og:type" content="website">
-        <meta property="og:title" content="𝕮𝖆$𝖍𝖒𝖔𝖓𝖊𝖞 𝕮𝖔𝖓$">
-        <meta property="og:description" content="List of Condos made by Roblox thot for 𝕮𝖆$𝖍𝖒𝖔𝖓𝖊𝖞 𝕮𝖔𝖓$">
-        <meta property="og:image" content="https://cdn.discordapp.com/icons/693618792005369867/a_e7961a8108b529cbabfd81aeab66da57.gif?size=4096">
 
         <!-- Twitter Meta Tags -->
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:title" content="𝕮𝖆$𝖍𝖒𝖔𝖓𝖊𝖞 𝕮𝖔𝖓$">
-        <meta name="twitter:description" content="List of Condos made by Roblox thot for 𝕮𝖆$𝖍𝖒𝖔𝖓𝖊𝖞 𝕮𝖔𝖓$">
-        <meta name="twitter:image" content="https://cdn.discordapp.com/icons/693618792005369867/a_e7961a8108b529cbabfd81aeab66da57.gif?size=4096">
-		<link rel='icon' type='image/gif' href='https://cdn.discordapp.com/icons/693618792005369867/a_e7961a8108b529cbabfd81aeab66da57.gif?size=4096'>
+        <meta name="twitter:title" content="<?php echo($embedTitle);?>">
+        <meta name="twitter:description" content="<?php echo($embedDescription);?>">
+        <?php endif; ?>
 	</head>
 
 	<body style="opacity:0" onload='fadeInPage()'>
