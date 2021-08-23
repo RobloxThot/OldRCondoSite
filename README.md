@@ -7,3 +7,8 @@ Source code to my old Roblox Condo site
 * Don't put alot of gameIds (if you do you need to optimise the checker.)
 * UI will not work on phones (too small)
 * The blur on the game page can lag bad end PCs (or just chrome)
+
+# WIPs
+* Adding credits to me
+* Try and optimise code
+* Add a update detecter (will add msg when I release a new update)
