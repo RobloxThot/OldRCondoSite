@@ -9,6 +9,6 @@ Source code to my old Roblox Condo site
 * The blur on the game page can lag bad end PCs (or just chrome)
 
 # WIPs
-* Adding credits to me
-* Try and optimise code
-* Add a update detecter (will add msg when I release a new update)
+[ ] Adding credits to me
+[ ] Try and optimise code
+[ ] Add a update detecter (will add msg when I release a new update)
