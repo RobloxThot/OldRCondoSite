@@ -1,4 +1,4 @@
-# cashmoney-con.tk
+### __If you would like a webhook notification for when I post new releases DM me on [Discord](https://www.discord.com/users/378746510596243458) a webhook and I'll add it__
 Source code to my old Roblox Condo site
 
 [For support dm me on Discord ](https://www.discord.com/users/378746510596243458)
