@@ -3,7 +3,7 @@
 
 //you need to put a roblox cookie here blame roblox
 $cookie = "_|WARNING:-DO-NOT-SHARE-THIS...";
-$websiteName = "Condos";
+$pageName = "Condos";
 $blurAmount = "10px";
 $backgroundImage = "https://www.teahub.io/photos/full/11-111196_gif-wallpaper.gif";
 $discordInvite = "https://discord.gg/";
@@ -230,7 +230,6 @@ $versionId = "1.0.0"
                         echo "{$bannedCount}/{$gameAmountCount}<br></h3>";
                     }
                 } catch (Error $e) {
-                    exceptions_error_handler($e);
                 }
                 if($bannedCount == $gameAmountCount){
                     if ($array["hasPinged"] == false){
