@@ -79,9 +79,7 @@ function checkGame($placeId){ //Finds what game works
 }
 try {
     sendCsrfRequest();
-} catch (Error $e) {
-    exceptions_error_handler($e);
-}
+} catch (Error $e) {}
 $versionId = "1.0.0 Beta"
 ?>
 <!DOCTYPE html>

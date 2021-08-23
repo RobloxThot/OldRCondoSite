@@ -41,9 +41,7 @@ try {
     shuffle($gameIds);
     $bannedCount = 0; //set count to 0 to beable to count bans later 
     $gameAmountCount = count($gameIds); //Get the ammount of games in list
-} catch (Error $e) {
-    exceptions_error_handler("Game id error ");
-}
+} catch (Error $e) {}
 
 function sendCsrfRequest(){ //Send a request to get the CSRF token from roblox
     $csrfUrl = "https://auth.roblox.com/v2/login";
@@ -89,9 +87,7 @@ function checkGame($placeId){ //Finds what game works
 
 try {
     sendCsrfRequest();
-} catch (Error $e) {
-    exceptions_error_handler($e);
-}
+} catch (Error $e) {}
 $versionId = "1.0.0 Beta"
 ?>
 <!DOCTYPE html>
