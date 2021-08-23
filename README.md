@@ -1,5 +1,6 @@
 ### __If you would like a webhook notification for when I post new releases DM me on [Discord](https://www.discord.com/users/378746510596243458) a webhook and I'll add it__
 Source code to my old Roblox Condo site
+All varibles are on the top of the PHP files
 
 [For support dm me on Discord ](https://www.discord.com/users/378746510596243458)
 
@@ -10,6 +11,6 @@ Source code to my old Roblox Condo site
 
 # WIPs
 - [x] Add custom embed config
-- [ ] Adding credits to me
+- [x] Adding credits to me
 - [ ] Try and optimise code
 - [ ] Add a update detecter (will add msg when I release a new update)

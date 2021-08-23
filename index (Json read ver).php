@@ -8,6 +8,8 @@ $blurAmount = "10px";
 $backgroundImage = "https://www.teahub.io/photos/full/11-111196_gif-wallpaper.gif";
 $discordInvite = "https://discord.gg/";
 
+$githubCredits = True; //Add in the bottom right my github link
+
 //Embed data
 $enableEmbed = True; //IDK if i made the toggle right lol
 $embedHexColor = "#85bb65"; //Needs to be hex code
@@ -239,6 +241,16 @@ $versionId = "1.0.0"
                     }
                 }
             ?>
+            <div id="bottomLeft">
+                V<? echo($versionId); ?>
+            </div>
+            <?php if ($githubCredits): ?>
+            <div id="bottomRight">
+                <a href="https://github.com/Roblox-Thot/cashmoney-con.tk">
+                    Site coded by Roblox Thot
+                </a>
+            </div>
+            <?php endif; ?>
 		</a>
     </body>
 </html>

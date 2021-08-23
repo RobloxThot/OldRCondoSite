@@ -10,6 +10,8 @@ $gameIds = array(// List of gamesIDs
     6674398905,
 );
 
+$githubCredits = True; //Add in the bottom right my github link
+
 //Embed data
 $enableEmbed = True; //IDK if i made the toggle right lol
 $embedHexColor = "#85bb65"; //Needs to be hex code
@@ -218,6 +220,16 @@ $versionId = "1.0.0"
                     exceptions_error_handler($e);
                 }
             ?>
+            <div id="bottomLeft">
+                V<? echo($versionId); ?>
+            </div>
+            <?php if ($githubCredits): ?>
+            <div id="bottomRight">
+                <a href="https://github.com/Roblox-Thot/cashmoney-con.tk">
+                    Site coded by Roblox Thot
+                </a>
+            </div>
+            <?php endif; ?>
 		</a>
     </body>
 </html>
