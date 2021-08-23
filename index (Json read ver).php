@@ -91,7 +91,7 @@ try {
 } catch (Error $e) {
     exceptions_error_handler($e);
 }
-$versionId = "1.0.0"
+$versionId = "1.0.0 Beta"
 ?>
 <!DOCTYPE html>
 <html lang='en'>
@@ -100,7 +100,6 @@ $versionId = "1.0.0"
 		<title>
                 <?php echo($pageName); ?>
 		</title>
-        <script async src="https://arc.io/widget.min.js#8c7d1Dmf"></script>
 	    <style>
 	    	@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 	    	@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
@@ -241,7 +240,7 @@ $versionId = "1.0.0"
                 }
             ?>
             <div id="bottomLeft">
-                V<? echo($versionId); ?>
+                V<?php echo($versionId); ?>
             </div>
             <?php if ($githubCredits): ?>
             <div id="bottomRight">
