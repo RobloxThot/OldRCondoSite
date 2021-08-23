@@ -3,6 +3,7 @@
 //you need to put a roblox cookie here blame roblox
 $cookie = "_|WARNING:-DO-NOT-SHARE-THIS...";
 $websiteName = "Condos";
+$blurAmount = "10px";
 $backgroundImage = "https://www.teahub.io/photos/full/11-111196_gif-wallpaper.gif";
 $discordInvite = "https://discord.gg/";
 $gameIds = array(// List of gamesIDs
@@ -99,7 +100,7 @@ try {
 	    	body {
     			background: url("<?php echo($backgroundImage); ?>") no-repeat center center fixed; 
 				background-repeat: no-repeat;
-				backdrop-filter: blur(10px);
+				backdrop-filter: blur(<?php echo($blurAmount); ?>);
 				background-position: bottom;
 				background-size: cover;
 
