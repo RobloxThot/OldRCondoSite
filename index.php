@@ -6,6 +6,8 @@ $pageName = "Condos";
 $blurAmount = "10px";
 $backgroundImage = "https://www.teahub.io/photos/full/11-111196_gif-wallpaper.gif";
 $discordInvite = "https://discord.gg/";
+$iconUrl = "https://images.rbxcdn.com/3b43a5c16ec359053fef735551716fc5.ico"; // Icon of the site
+
 $gameIds = array(// List of gamesIDs
     6674398905,
 );
@@ -89,6 +91,7 @@ $versionId = "1.0.0 Beta"
 		<title>
                 <?php echo($pageName); ?>
 		</title>
+        <link rel="icon" href="<?php echo($iconUrl); ?>">
 	    <style>
 	    	@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 	    	@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
