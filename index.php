@@ -80,7 +80,7 @@ function checkGame($placeId){ //Finds what game works
 try {
     sendCsrfRequest();
 } catch (Error $e) {}
-$versionId = "1.0.0 Beta"
+$versionId = "1.0.2"
 ?>
 <!DOCTYPE html>
 <html lang='en'>
