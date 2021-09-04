@@ -14,3 +14,4 @@ All varibles are on the top of the PHP files
 - [x] Adding credits to me
 - [ ] Try and optimise code
 - [ ] Add a update detecter (will add msg when I release a new update)
+- [ ] Make the Discord link just open Discord (if they have it open)
