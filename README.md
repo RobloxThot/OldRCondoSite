@@ -20,5 +20,7 @@ All varibles are on the top of the PHP files
 - [x] Add custom embed config
 - [x] Adding credits to me
 - [ ] Try and optimise code
-- [ ] Add a update detecter (will add msg when I release a new update)
-- [ ] Make the Discord link just open Discord (if they have it open)
+- [ ] Add a update detecter (will add msg when I release a new update) (close)
+- [ ] Make the Discord link just open Discord (Scrapped as of now do to it being blocked)
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
