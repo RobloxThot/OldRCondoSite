@@ -1,4 +1,4 @@
-### __If you would like a webhook notification for when I post new releases DM me on [Discord](https://www.discord.com/users/378746510596243458) a webhook and I'll add it__
+### __If you would like a webhook notification for when I post new releases follow this channel on [Discord](https://discord.gg/gDA5FzrbkC)__
 ### If you would like to donate my friend's cashapp is $CoolShow (I can't get one)
 
 Source code to my old Roblox Condo site
