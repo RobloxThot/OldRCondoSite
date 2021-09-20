@@ -21,6 +21,10 @@ $embedHexColor = "#85bb65"; //Needs to be hex code
 $embedTitle = "Condos"; //Title for embed
 $embedDescription = "List of Condos"; //Description for embed
 
+// /‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\
+// | DON'T MESS WITH ANY THING PAST UNLESS YOU KNOW WHAT YOU ARE DOING! |
+// \____________________________________________________________________/
+
 //Discord out of games and error webhook
 function postToDiscord($message){
     $json_data = json_encode(["content" => $message], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE );
