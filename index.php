@@ -206,11 +206,13 @@ $versionId = "1.0.2"
 		<h1 class="text-light">
                 <?php echo($pageName); ?>
 		</h1>
+        <?php if ($discordInvite == "https://discord.gg/"): ?>
         <div class="btn-group mt-2 mb-4" role="group" aria-label="actionButtons">
 			<a href="<?php echo($discordInvite); ?>" class="d-block btn btn-outline-light">
 				Join the Discord
 			</a>
 		</div>
+        <?php endif; ?>
         <a>
             <?php
                 try {
