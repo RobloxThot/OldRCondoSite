@@ -234,34 +234,34 @@ $versionId = "1.0.2"
 
             <?php if ($checkForUpdates): ?>
             <?php 
-            //check the current ver on github
-            //Not going to explain this mess
-            $url = "https://api.github.com/repos/Roblox-Thot/cashmoney-con.tk/releases";
+                //check the current ver on github
+                //Not going to explain this mess
+                $url = "https://api.github.com/repos/Roblox-Thot/cashmoney-con.tk/releases";
 
-            $curl = curl_init($url);
-            curl_setopt($curl, CURLOPT_URL, $url);
-            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-            
-            $headers = array(
-                "User-Agent: Update Checker"
-             );
-             curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-            //for debug only!
-            curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
-            curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-            
-            $resp = curl_exec($curl);
-            curl_close($curl);
-            var_dump($resp);
-            
-            // Converts it into a PHP object
-            $data = json_decode($resp);
-            $githubVersion = $githubVersion[0]->tag_name;
+                $curl = curl_init($url);
+                curl_setopt($curl, CURLOPT_URL, $url);
+                curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+                
+                $headers = array(
+                    "User-Agent: Update Checker"
+                );
+                curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+                //for debug only!
+                curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+                curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+                
+                $resp = curl_exec($curl);
+                curl_close($curl);
+                var_dump($resp);
+                
+                // Converts it into a PHP object
+                $data = json_decode($resp);
+                $githubVersion = $githubVersion[0]->tag_name;
             ?>
             <script>
-            if (<?php echo $versionId ?> == <?php echo $githubVersion; ?>) {
-                $('#popupDialog').popup("open");
-            }
+                if (<?php echo $versionId ?> == <?php echo $githubVersion; ?>) {
+                    $('#popupDialog').popup("open");
+                }
             </script>
             <div role="main" class="ui-content">
                 <div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="a" style="max-width:400px;" class="ui-corner-all">
