@@ -7,7 +7,7 @@ $blurAmount = "10px";
 $backgroundImage = "https://www.teahub.io/photos/full/11-111196_gif-wallpaper.gif";
 $discordInvite = "https://discord.gg/";
 $iconUrl = "https://images.rbxcdn.com/3b43a5c16ec359053fef735551716fc5.ico"; // Icon of the site
-$webhook = "https://discord.com/api/webhooks/0/no" // Out of games and error webhook
+$webhook = "https://discord.com/api/webhooks/0/no"; // Out of games and error webhook
 
 $gameIds = array(// List of gamesIDs
     6674398905,
