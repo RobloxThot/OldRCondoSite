@@ -1,3 +1,5 @@
+# Not currently updating as I don't have time.
+
 ### __If you would like a webhook notification for when I post new releases follow this channel on [Discord](https://discord.gg/gDA5FzrbkC)__
 ### If you would like to donate my friend's cashapp is $CoolShow (I can't get one)
 
