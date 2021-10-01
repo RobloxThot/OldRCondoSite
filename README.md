@@ -10,7 +10,7 @@ All varibles are on the top of the PHP files
 
 # Lists of known sites using my code:
 - [Celestial Condos](https://celestialcondos.com/) (Removed my credits)
-- [Future SS](https://futuress.xyz/) (Removed my credits)
+- [Future SS](https://futuress.xyz/) (Removed my credits and doesn't even work)
 - [Astral Society](https://astralsociety.xyz/) (Don't think they use the site anymore)
 
 
