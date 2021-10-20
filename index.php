@@ -1,7 +1,6 @@
 <?php
 //Needed varibles
-//you need to put a roblox cookie here blame roblox
-$cookie = "_|WARNING:-DO-NOT-SHARE-THIS...";
+
 $pageName = "Condos";
 $blurAmount = "10px";
 $backgroundImage = "https://www.teahub.io/photos/full/11-111196_gif-wallpaper.gif";
@@ -42,38 +41,12 @@ function postToDiscord($message){
 }
 shuffle($gameIds);
 
-function sendCsrfRequest(){ //Send a request to get the CSRF token from roblox
-    $csrfUrl = "https://auth.roblox.com/v2/login";
-
-    function grabCsrfToken( $curl, $header_line ) { //Filter through the Roblox headers
-        if(strpos($header_line, "x-csrf-token") !== false){
-            global $csrf;
-            $csrf = ltrim($header_line, "x-csrf-token: "); // set x-csrf-token var
-        }
-        return strlen($header_line);
-    }
-
-    $csrfCurl = curl_init();
-    curl_setopt($csrfCurl, CURLOPT_URL, $csrfUrl);
-    curl_setopt($csrfCurl, CURLOPT_POST, true);
-    curl_setopt($csrfCurl, CURLOPT_HEADERFUNCTION, "grabCsrfToken");
-    curl_setopt($csrfCurl, CURLOPT_SSL_VERIFYPEER, false);
-    curl_setopt($csrfCurl,CURLOPT_RETURNTRANSFER,1);
-
-    curl_exec($csrfCurl);
-    curl_close($csrfCurl);
-}
-
 function checkGame($placeId){ //Finds what game works
-    global $csrf, $cookie, $isPlayable;
+    global $isPlayable;
     $gameUrl = "https://games.roblox.com/v1/games/multiget-place-details?placeIds=$placeId";
 
     $gameCurl = curl_init();
     curl_setopt($gameCurl, CURLOPT_URL, $gameUrl);
-
-    $headers = array("X-CSRF-TOKEN: ".$csrf);
-    curl_setopt($gameCurl, CURLOPT_COOKIE, '.ROBLOSECURITY='.$cookie);
-    curl_setopt($gameCurl, CURLOPT_HTTPHEADER, $headers);
     curl_setopt($gameCurl, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($gameCurl, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
     curl_setopt($gameCurl, CURLOPT_RETURNTRANSFER,1);
@@ -83,9 +56,6 @@ function checkGame($placeId){ //Finds what game works
     $data = json_decode($resp);
     return $data[0]->isPlayable; //Get if you can play or not
 }
-try {
-    sendCsrfRequest();
-} catch (Error $e) {}
 $versionId = "1.0.2"
 ?>
 <!DOCTYPE html>
