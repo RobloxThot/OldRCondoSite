@@ -1,4 +1,5 @@
 # Not currently updating as I don't have time.
+# If you want to use Replit you will need to find a way to get PHP legacy on it
 
 ### __If you would like a webhook notification for when I post new releases follow this channel on [Discord](https://discord.gg/gDA5FzrbkC)__
 ### If you would like to donate my friend's cashapp is $CoolShow (I can't get one)
