@@ -11,8 +11,9 @@ All varibles are on the top of the PHP files
 
 # Lists of known sites using my code:
 ### Working sites:
-- [Future SS](https://futuress.xyz/) (Removed my credits and doesn't even work)
+- All sites are now gone
 ### Broken/Deleted sites:
+- [Future SS](https://futuress.xyz/) (Removed my credits and doesn't even work)
 - [Celestial Condos](https://celestialcondos.com/) (Removed my credits)
 - [Astral Society](https://astralsociety.xyz/) (Don't think they use the site anymore)
 
