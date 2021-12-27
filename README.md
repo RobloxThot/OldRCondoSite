@@ -1,4 +1,4 @@
-# Not currently updating as I don't have time. <br> And why would I? Everyone just keeps taking credit for my work.
+# Not currently updating as I don't have time. <br> And why would I?<br>Everyone just keeps taking credit for my work.
 # If you want to use Replit you will need to find a way to get PHP legacy on it
 
 ### __If you would like a webhook notification for when I post new releases follow this channel on [Discord](https://discord.gg/gDA5FzrbkC)__
