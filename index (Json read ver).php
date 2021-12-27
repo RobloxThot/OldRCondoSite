@@ -1,4 +1,8 @@
 <?php
+// /‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\
+// | For this to work this file needs to replace index.php |
+// \_______________________________________________________/
+
 //Needed varibles
 
 //you need to put a roblox cookie here blame roblox
@@ -10,6 +14,7 @@ $discordInvite = "https://discord.gg/";
 $iconUrl = "https://images.rbxcdn.com/3b43a5c16ec359053fef735551716fc5.ico"; // Icon of the site
 
 $githubCredits = True; //Add in the bottom right my github link
+// If you keep my credits and dm me the site link I will post it to the github
 
 //Embed data
 $enableEmbed = True; //IDK if i made the toggle right lol
