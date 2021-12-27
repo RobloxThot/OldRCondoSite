@@ -4,7 +4,6 @@
 ### __If you would like a webhook notification for when I post new releases follow this channel on [Discord](https://discord.gg/gDA5FzrbkC)__
 ### If you would like to donate my friend's cashapp is $CoolShow (I can't get one)
 
-Source code to my old Roblox Condo site
 All varibles are on the top of the PHP files
 
 [For support dm me on Discord ](https://www.discord.com/users/378746510596243458)
