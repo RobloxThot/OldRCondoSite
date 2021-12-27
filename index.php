@@ -14,6 +14,8 @@ $gameIds = array(// List of gamesIDs
 );
 
 $githubCredits = True; //Add in the bottom right my github link
+// If you keep my credits and dm me the site link I will post it to the github
+
 $checkForUpdates = False; //Will check for updates (disabled by default do to being annoying to users)
 
 //Embed data
