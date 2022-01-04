@@ -1,3 +1,6 @@
+# This has became the biggest repo I own with 100 views thats cool ig <br> <br>![image](https://user-images.githubusercontent.com/67937010/148018108-46eabfe6-60d8-4ded-9fc1-aa51cc6ed5cd.png)
+
+
 # Not currently updating as I don't have time. <br> And why would I?<br>Everyone just keeps taking credit for my work.
 # If you want to use Replit you will need to find a way to get PHP legacy on it
 
