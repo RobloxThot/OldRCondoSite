@@ -1,4 +1,5 @@
 # Had to unarchive this just to say:<br>I have had more than 1 person ask me if this is an auto uploader <br>ITS NOT A FUCKING CONDO UPLOADER ITS JUST A GOD DAM SITE<br>I ALSO QUIT CONDOS FUCK OFF!
+# <b>Last thing is I will not help you on this shit!</b>
 
 
 ### If you would like to donate my friend's cashapp is $CoolShow (I can't get one)
