@@ -1,10 +1,6 @@
-# This has became the biggest repo I own with 100 views thats cool ig <br> <br>![image](https://user-images.githubusercontent.com/67937010/148018108-46eabfe6-60d8-4ded-9fc1-aa51cc6ed5cd.png)
+# Had to unarchive this just to say:<br>I have had more than 1 person ask me if this is an auto uploader <br>ITS NOT A FUCKING CONDO UPLOADER ITS JUST A GOD DAM SITE<br>I ALSO QUIT CONDOS FUCK OFF!
 
 
-# Not currently updating as I don't have time. <br> And why would I?<br>Everyone just keeps taking credit for my work.
-# If you want to use Replit you will need to find a way to get PHP legacy on it
-
-### __If you would like a webhook notification for when I post new releases follow this channel on [Discord](https://discord.gg/gDA5FzrbkC)__
 ### If you would like to donate my friend's cashapp is $CoolShow (I can't get one)
 
 All varibles are on the top of the PHP files
