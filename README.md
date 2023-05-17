@@ -1,16 +1,6 @@
-# Had to unarchive this just to say:<br>I have had more than 1 person ask me if this is an auto uploader <br>ITS NOT A FUCKING CONDO UPLOADER ITS JUST A GOD DAM SITE<br>I ALSO QUIT CONDOS FUCK OFF!
-# <b>Last thing is I will not help you on this shit!</b>
-
-
-### If you would like to donate my friend's cashapp is $CoolShow (I can't get one)
+# I quit condos in 2021 so I will not support this code anymore 
 
 All varibles are on the top of the PHP files
-
-[For support dm me on Discord ](https://www.discord.com/users/378746510596243458)
-
-# Lists of known sites using my code and keep credits:
-- Every one takes credit for my work :(
-
 
 # Notes
 * Don't put alot of gameIds (if you do you need to optimise the checker.)
