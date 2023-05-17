@@ -13,8 +13,7 @@ $backgroundImage = "https://www.teahub.io/photos/full/11-111196_gif-wallpaper.gi
 $discordInvite = "https://discord.gg/";
 $iconUrl = "https://images.rbxcdn.com/3b43a5c16ec359053fef735551716fc5.ico"; // Icon of the site
 
-$githubCredits = True; //Add in the bottom right my github link
-// If you keep my credits and dm me the site link I will post it to the github
+$githubCredits = false; //Add in the bottom right my github link
 
 //Embed data
 $enableEmbed = True; //IDK if i made the toggle right lol
