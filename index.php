@@ -13,10 +13,7 @@ $gameIds = array(// List of gamesIDs
     6674398905,
 );
 
-$githubCredits = True; //Add in the bottom right my github link
-// If you keep my credits and dm me the site link I will post it to the github
-
-$checkForUpdates = False; //Will check for updates (disabled by default do to being annoying to users)
+$githubCredits = false; //Add in the bottom right my github link
 
 //Embed data
 $enableEmbed = True; //IDK if i made the toggle right lol
@@ -200,12 +197,6 @@ $versionId = "1.0.2"
         <meta name="twitter:title" content="<?php echo($embedTitle);?>">
         <meta name="twitter:description" content="<?php echo($embedDescription);?>">
         <?php endif; ?>
-
-        <?php if ($checkForUpdates): ?>
-        <link rel="stylesheet" href="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css" />
-        <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
-        <?php endif; ?>
         
 	</head>
 
@@ -240,48 +231,6 @@ $versionId = "1.0.2"
             <div id="bottomLeft"> <?php //Please don't take credit for this shit :) ?>
                 V<?php echo($versionId); ?>
             </div>
-
-            <?php if ($checkForUpdates): ?>
-            <?php 
-                //check the current ver on github
-                //Not going to explain this mess
-                $url = "https://api.github.com/repos/Roblox-Thot/cashmoney-con.tk/releases";
-
-                $curl = curl_init($url);
-                curl_setopt($curl, CURLOPT_URL, $url);
-                curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-                
-                $headers = array(
-                    "User-Agent: Update Checker"
-                );
-                curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-                //for debug only!
-                curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
-                curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-                
-                $resp = curl_exec($curl);
-                curl_close($curl);
-                var_dump($resp);
-                
-                // Converts it into a PHP object
-                $data = json_decode($resp);
-                $githubVersion = $githubVersion[0]->tag_name;
-            ?>
-            <script>
-                if (<?php echo $versionId ?> == <?php echo $githubVersion; ?>) {
-                    $('#popupDialog').popup("open");
-                }
-            </script>
-            <div role="main" class="ui-content">
-                <div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="a" style="max-width:400px;" class="ui-corner-all">
-                    <div role="main" class="ui-corner-bottom ui-content">
-                        <h3 class="ui-title">Alert!</h3>
-                        <p>There is a new version of the site<br>Link to <a href="https://github.com/Roblox-Thot/cashmoney-con.tk/releases/latest">GitHub</a></p>
-                        <a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="a">Close</a>
-                    </div>
-                </div>
-            </div>
-            <?php endif; ?>
 
             <?php if ($githubCredits): ?>
             <div id="bottomRight"> <?php //Please don't take credit for this shit :) ?>
